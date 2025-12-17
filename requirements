@@ -1,0 +1,219 @@
+✅ PharmaMAS – Complete Requirements List
+1️⃣ Core Technologies
+
+These are the main technologies used to build the Multi-Agent System:
+
+✔ Python 3.10+
+
+Primary programming language for the entire project.
+
+✔ CrewAI
+
+Framework for building Multi-Agent AI systems.
+
+✔ LangChain
+
+For LLM-based task execution (if needed, optional).
+
+2️⃣ Python Libraries Used
+
+These are installed inside Google Colab:
+
+AI + Agents
+
+crewai
+
+openai (or any LLM provider mock)
+
+langchain
+
+Data Handling
+
+pandas
+
+json
+
+csv
+
+openpyxl (for Excel)
+
+PDF Generation
+
+reportlab
+
+Environment Management
+
+python-dotenv
+
+Frontend (Optional)
+
+streamlit
+
+cloudflared (for tunneling UI in Colab)
+
+3️⃣ Infrastructure / Runtime Environment
+✔ Google Colab Notebook
+
+Used for coding, testing, and running the MAS
+
+Temporary filesystem with /content/
+
+✔ Cloudflared Tunnel
+
+Used to expose Streamlit UI
+
+No password, no login required
+
+
+4️⃣ Mock Datasets Used
+
+All mock datasets created inside /mock_data/:
+
+✔ 1. IQVIA Market Data (iqvia_mock.json)
+
+Market size
+
+CAGR
+
+Competitor list
+
+Therapy area data
+
+✔ 2. Patent Data (patent_mock.json)
+
+Active and expired patents
+
+Expiry year
+
+Patent title
+
+Status
+
+✔ 3. Clinical Trials Data (clinical_mock.json)
+
+Ongoing trials
+
+Phase
+
+Indication
+
+Sponsor
+
+✔ 4. EXIM API Data (exim_mock.csv)
+
+Export value
+
+Import value
+
+Destination country
+
+Historical data
+
+✔ 5. Web Intelligence Data (web_mock.json)
+
+Scientific articles
+
+Summaries
+
+Publication year
+
+✔ 6. Internal Knowledge Data (simulated text)
+
+Internal insights
+
+Strategy notes
+
+5️⃣ Multi-Agent Components
+1. Master Agent
+
+Orchestrates tasks
+
+Coordinates Worker Agents
+
+Synthesizes results
+
+Runs repurposing heuristics
+
+2. Worker Agents
+
+Market Insights Agent
+
+Patent Landscape Agent
+
+Clinical Trials Agent
+
+EXIM Trade Agent
+
+Web Intelligence Agent
+
+Internal Knowledge Agent
+
+3. Report Generator Agent
+
+Creates professional PDF
+
+Creates Excel dashboard
+
+6️⃣ Output & Reporting Requirements
+PDF Report
+
+Includes:
+
+Market insights
+
+Patent landscape
+
+Clinical trials
+
+EXIM analysis
+
+Research articles
+
+Internal insights
+
+Repurposing flags
+
+Excel Workbook
+
+Sheets:
+
+Market
+
+Patents
+
+Clinical trials
+
+EXIM
+
+Web
+
+Flags
+
+Internal insights
+
+7️⃣ Optional UI Requirements
+Streamlit Frontend
+
+Input field for molecule
+
+Displays instructions
+
+Allows user to download PDF & Excel
+
+Cloudflared Tunnel
+
+Makes Streamlit accessible publicly from Colab
+
+8️⃣ Presentation Requirements (PPT)
+
+You already have:
+
+5-slide PPT structure
+
+Architecture diagram
+
+Workflow diagram
+
+Project description
+
+Speech script
